@@ -2,40 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://amplify-debbeo-debbeo-91624-deployment.s3-us-west-2.amazonaws.com/favicons/logo192.png"/>
+    <title>Debbeo - Smart Money</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+    <title>Debbeo</title>
   </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/a44c61f3-3d9b-4b3e-a3ed-1215a70a3fb2/page/0N3YB" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="text-center">
+<main class="main">
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <br></br>
+        <h3 class="masthead-brand">Welcome to Debbeo! </h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="/team.html">Team</a>
+          <a class="nav-link" href="/login.html">Login</a>
+          <br></br>
+          <br></br>
+        </nav>
+      </div>
+    </header>
+  <main role="main" class="inner cover">
+      <h1 class="cover-heading"> Debbeo simplifies your personal finances. </h1>
+      <br></br>
+      <p class="lead">Add your banks, credit card providers, or other financial instutions below to begin simplifying your personal finances.</p>
+      <br></br>
+      <button type="button" id="link-btn" class="btn btn-success btn-lg">Start Simplifying Here</button>
+      <p class="lead">
+      </p>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+      <iframe width="1000" height="1000" src="https://datastudio.google.com/embed/reporting/a44c61f3-3d9b-4b3e-a3ed-1215a70a3fb2/page/0N3YB" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </main>
+</body>
 </html>
